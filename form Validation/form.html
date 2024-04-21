@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <span id="status"></span>
+  <div class="section-form">
+    <form action="#" class="form">
+      <!-- First Name -->
+      <div class="first-name">
+        <label for="first-name" class="first-name-label">First Name:</label>
+        <input type="text" class="form-input first-name-input" name="first-name" placeholder="Enter Your First Name"
+          pattern="[A-Za-z]+" required>
+      </div>
+
+      <!-- Last Name -->
+      <div class="last-name">
+        <label for="last-name" class="last-name">Last Name:</label>
+        <input type="text" class="form-input last-name-input" name="last-name" pattern="[A-Za-z]+"
+          placeholder="Enter Your Last Name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" class="form-input Email-input" name="email" placeholder="Enter your Email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+      </div>
+
+      <!-- Mobile -->
+      <div class="mobile">
+        <label for="mobile-number">Mobile:</label>
+        <input type="tel" class="form-input mobile-input" name="mobile-number" pattern="[0-9]{10}"
+          placeholder="Only 10 digits are allowed" required>
+      </div>
+
+      <!-- Gender -->
+      <div class="gender">
+        <label for="gender">Gender:</label>
+        <div class="genders">
+          <input type="radio" name="gender" value="male" required> Male
+          <input type="radio" name="gender" value="female" required formnovalidate> Female
+        </div>
+
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="date-of-birth">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" class="form-input" name="dob" placeholder="mm/dd/yyyy" required>
+      </div>
+
+      <!-- Address -->
+      <div class="address">
+        <label for="textarea">Address:</label>
+        <textarea name="text-area" id="textarea" class="form-input" cols="30" rows="10" required></textarea>
+      </div>
+
+      <!-- City Name -->
+      <div class="city">
+        <label for="cityname">City Name:</label>
+        <input type="text" name="city-name" class="form-input" id="cityname" placeholder="Enter your City name"
+          pattern="[A-Za-z]+" required>
+      </div>
+
+      <!-- Area Pin -->
+      <div class="pin">
+        <label for="areapin">Area Pin:</label>
+        <input type="number" name="Area-Pin" class="form-input" id="areapin" placeholder="Enter your Pin Number"
+          max="999999" required>
+      </div>
+
+      <!-- State Name -->
+      <div class="state">
+        <label for="statename">State Name:</label>
+        <input type="text" name="state-name" class="form-input" id="statename" placeholder="Enter your State name"
+          pattern="[A-Za-z]+" required>
+      </div>
+
+      <!-- Qualification -->
+      <div class="qualification">
+        <label for="qualification">Qualification</label>
+        <select name="qualification" id="qualification" class="form-input" required>
+          <option value="">Select your Qualification</option>
+          <option value="10th">10th Pass</option>
+          <option value="12th">12th Pass</option>
+          <option value="diploma">Diploma</option>
+          <option value="graduation">Graduation</option>
+        </select>
+      </div>
+
+      <!-- Specialization -->
+      <div class="specialization">
+        <label for="specialization">Specialization:</label>
+        <div class="courses">
+          <div>
+            <input type="checkbox" name="specialization" id="csCheckbox" formnovalidate>Computer
+            Science
+          </div>
+          <div>
+            <input type="checkbox" name="specialization" id="itCheckbox" formnovalidate> Information
+            Technology
+          </div>
+          <div>
+            <input type="checkbox" name="specialization" id="caCheckbox" formnovalidate> Computer
+            Architecture
+          </div>
+
+          <div>
+            <input type="checkbox" name="specialization" id="tcCheckbox" formnovalidate> Tele
+            Communication
+          </div>
+          <div>
+            <input type="checkbox" name="specialization" id="tcCheckbox" formnovalidate> Other
+          </div>
+
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="password">
+        <label for="password">Password:</label>
+        <input type="password" class="form-input" placeholder="Enter your Password" name="password" required>
+      </div>
+      <!-- Register button -->
+      <div class="register-button">
+        <button type="submit" class="btn-register">Register</button>
+      </div>
+    </form>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./form.js"></script>
+</body>
+
+</html>

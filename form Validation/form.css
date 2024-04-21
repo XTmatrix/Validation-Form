@@ -1,0 +1,87 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(128, 128, 128, 0.764);
+  padding: 25px 0;
+}
+.form {
+  margin-top: 30px;
+  width: 600px;
+}
+.form-input {
+  width: 500px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+/* Style for form inputs and labels */
+.form-input,
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Clearing float for each input and label pair */
+.first-name,
+.last-name,
+.email,
+.mobile,
+.gender,
+.date-of-birth,
+.address,
+.city,
+.pin,
+.state,
+.qualification,
+.password,
+.register-button {
+  clear: both;
+}
+
+/* Style for labels */
+label {
+  float: left;
+  width: 150px; /* Adjust width as needed */
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Style for form inputs */
+.form-input {
+  float: left;
+  width: calc(
+    100% - 160px
+  ); /* Adjust width considering label width and padding */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Style for specializations label */
+.specialization label {
+  float: left;
+  width: 150px; /* Adjust width as needed */
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Style for specializations checkboxes */
+.courses div {
+  display: block;
+  margin-right: 20px; /* Adjust margin as needed */
+  margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
+  margin-left: 150px;
+}
+
+/* Style for buttons */
+.btn-register {
+  display: block;
+  margin-left: 20px;
+  background-color: greenyellow;
+  border: none;
+  padding: 10px 20px;
+}
